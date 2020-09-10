@@ -1,0 +1,78 @@
+@media (min-width: 1200px) {
+	.container {width: 1054px;}
+}
+body {
+	font-family: Roboto-Regular;padding-top: 56px;
+	@include sm {
+		padding-top: 100px;
+	}
+}
+strong {font-family: Roboto-Bold;}
+em {font-family: Roboto-Italic;}
+a {
+	text-decoration: none;transition: all 0.3s;
+	&:hover, &:focus {text-decoration: none;color: #27AE60;}
+}
+.m-b-0 {margin-bottom: 0;}
+.m-b-30 {margin-bottom: 30px;}
+.text-white {color: #fff;}
+.text-green {color: #27AE60;}
+.text-grey {color: #4F4F4F;}
+.text-4f {color: #4f4f4f;}
+.text-33 {color: #333333;}
+.text-82 {color: #828282;}
+.text-black {color: black;}
+.text-red {color: #eb5757;}
+.bg-green {background: #27AE60;}
+.bg-white {background: #fff;}
+.bg-red {background: #EB5757;}
+/* /////////// IMAGE ZOOM /////////// */
+@-webkit-keyframes zoomInImage {
+	from {
+        transform: scale3d(1, 1, 1);
+	}
+	to {
+        transform: scale3d(1.1, 1.1, 1.1);
+	}
+}
+@keyframes zoomInImage {
+  	from {
+        transform: scale3d(1, 1, 1);
+  	}
+  	to {
+        transform: scale3d(1.1, 1.1, 1.1);
+  	}
+}
+.zoomInImage {animation-name: zoomInImage;}
+@-webkit-keyframes zoomOutImage {
+	from {
+        transform: scale3d(1.1, 1.1, 1.1);
+	}
+	to {
+        transform: scale3d(1, 1, 1);
+	}
+}
+@keyframes zoomOutImage {
+	from {
+        transform: scale3d(1.1, 1.1, 1.1);
+	}
+	to {
+        transform: scale3d(1, 1, 1);
+	}
+}
+.zoomOutImage {animation-name: zoomOutImage;}
+@keyframes social-anim {
+	0% {
+		opacity: 0.8;
+		transform: scale(0.9,0.9); 
+	}
+	50% {
+		opacity: 1;
+		transform: scale(1.1,1.1); 
+	}
+	100% {
+		opacity: 0.8;
+		transform: scale(0.9,0.9); 
+	}
+}
+

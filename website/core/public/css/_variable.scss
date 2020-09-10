@@ -1,0 +1,10 @@
+//https://css-tricks.com/snippets/sass/simple-asset-helper-functions/?fbclid=IwAR22WM5dPRJI7wqC8-NG-91mqlufmrKI9u64egNAVXRCTy7DGtNO3q7K9T4
+@function asset($type, $file) {
+  @return url('../' + $type + '/' + $file);
+}
+@function image($file) {
+  @return asset('images', $file);
+}
+@function font($file) {
+  @return asset('fonts', $file);
+}

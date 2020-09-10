@@ -1,0 +1,5 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target" : { "namespace": "android_app", "package_name": "com.mhcasia.teleconsultpatientdev",
+               "sha256_cert_fingerprints": ["D2:C9:DA:00:EB:6E:3F:D7:57:64:BD:89:1D:CF:EE:F2:EC:59:4E:9C:EE:99:9E:0E:BE:B2:0D:D2:A3:02:67:43"] }
+}]

@@ -1,0 +1,68 @@
+.profile-slider {
+	height: 444px;background: url(../images/d92dd1003ae0a75a41aa1f0988caba11.jpg)no-repeat center center;background-size: cover;
+}
+@media screen and (max-width: 767px) {
+	.profile-slider {height: 250px;}
+}
+.profile-content {
+	margin: 0 0 100px 0;
+	.sidebar {
+		margin: -105px 0 0 0;
+		.avatar {
+			width: 202px;height: 202px;border: 2px solid #fff;border-radius: 50%;overflow: hidden;margin: 0 0 30px 0;
+			img {width: 100%;height: 100%;object-fit: cover;}
+		}
+		.stars {
+			width: 204px;height: 33px;margin: 0 0 30px 0;
+			.ss {background: url(../images/starts.png)no-repeat left center;width: 100%;height: 100%;}
+		}
+		ul {
+			li {
+				margin: 0 0 15px 0;
+				.thumb {float: left;color: #4f4f4f;font-size: 28px;}
+				.info {
+					margin: -5px 0 0 35px;
+					.name {font-family: Roboto-Medium;font-size: 16px;color: #4f4f4f;}
+					.des {font-size: 18px;color: #BDBDBD;}
+				}
+			}
+		}
+	}
+	.body-content {
+		margin: 30px 0 0;
+		.name {font-family: RobotoCondensed-Bold;font-size: 36px;color: #4f4f4f;margin: 0 0 10px 0;}
+		.job {font-family: Roboto-Medium;font-size: 18px;color: #828282;opacity: 0.87;margin: 0 0 35px 0;}
+		.list-tab {
+			border-bottom: 1px solid #f2f2f2;margin: 0 0 20px 0;
+			li {
+				border-bottom: 2px solid transparent;margin: 0 10px;
+				a {font-size: 18px;color: #bdbdbd;display: block;padding: 10px 10px;}
+				&.active {
+					border-color: #27AE60;
+					a {color: #27AE60;font-family: Roboto-Medium;}
+				}
+			}
+		}
+		.tab-contentt {
+			.group-info {margin: 0 0 25px 0;}
+			.name {font-family: Roboto-Medium;font-size: 16px;color: #4f4f4f;margin: 0 0 10px 0;}
+			.name2 {font-size: 18px;color: #bdbdbd;}
+			.cmnd {
+				img {width: 175px;margin: 0 30px 0 0;}
+			}
+		}
+	}
+}
+@media screen and (max-width: 767px) {
+	.profile-content .sidebar {margin: -75px 0 0 0;}
+	.profile-content .sidebar .avatar {width: 150px;height: 150px;margin: 0 0 20px;}
+	.profile-content .sidebar .stars {zoom: 0.8;margin: 0 0 20px;}
+	.profile-content .sidebar ul li {margin: 0 0 5px;}
+	.profile-content .sidebar ul li .info .name, .profile-content .sidebar ul li .info .des {font-size: 14px;}
+	.profile-content .body-content {margin: 10px 0 0;}
+	.profile-content .body-content .name {font-size: 30px;}
+	.profile-content .body-content .job {font-size: 16px;margin: 0 0 20px;}
+	.profile-content .body-content .list-tab li {margin: 0 0;}
+	.profile-content .body-content .list-tab li a {padding: 10px 0;font-size: 14px;}
+	.profile-content .body-content .tab-contentt .name, .profile-content .body-content .tab-contentt .name2 {font-size: 14px;}
+}

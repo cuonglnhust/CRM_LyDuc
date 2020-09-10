@@ -1,0 +1,67 @@
+.help-slider {
+    height: 500px;background: url(../images/bg-partner.jpg)no-repeat bottom center;background-size: cover;display: flex;
+    .content {margin: auto auto;}
+    .big-title {margin: 0 0 15px 0;}
+    @include xs {
+        height: 350px;
+        .big-title {font-size: 36px;line-height: 42px;padding: 0 10px;}
+        .sub-title {font-size: 20px;line-height: 23px;padding: 0 10px;}
+    }
+}
+.help-content {
+    margin: 35px 0;
+    .control-main {
+        display: table-row;width: 100%;
+        .control-left {
+            display: table-cell;background: #f8f8f8;vertical-align: top;
+            ul {
+                margin: 0 0;padding: 45px 0;width: 240px;
+                li {
+                    a {
+                        display: block;height: 53px;line-height: 53px;padding: 0 10px 0 37px;color: #333;font-family: Roboto-Bold;font-size: 16px;position: relative;border-left: 4px solid transparent;
+                        &:hover {color: #27AE60;}
+                    }
+                    &.active {
+                        a {background: rgba(196,196,196,0.24);border-left-color: #27ae60;}
+                    }
+                }
+            }
+        }
+        .control-right {
+            width: 100%;display: table-cell;vertical-align: top;padding-left: 25px;
+            #chtg {
+                .top-tit {opacity: 0.87;margin: 0 0 36px 0;}
+            }
+            .list-check {
+                margin-bottom: 30px;
+                li {
+                    margin: 0 0 22px 0;position: relative;padding: 0 0 0 25px;
+                    &:before {content: '';position: absolute;top: 4px;left: 0;width: 16px;height: 16px;background: image('icon/subway-tick.png')no-repeat;}                 
+                }
+            }
+            .raw {
+                margin: 0 0 55px 0;
+                .thumb {
+                    width: 371px;float: left;margin: 0 20px 0 0;
+                }
+                &.right {
+                    .thumb {float: right;margin: 0 0 0 60px;width: 328px;}
+                }
+                .info {
+                    font-size: 16px;color: #4f4f4f;opacity: 0.87;line-height: 19px;
+                    .t1 {font-family: Roboto-Bold;margin: 15px 0 10px 0;}
+                }
+            }
+        }
+    }
+    @include xs {
+        .control-main {display: block;}
+        .control-main .control-left {display: block;}
+        .control-main .control-left ul {width: 100%;padding: 0 0;margin: 0 0 30px 0;}
+        .control-main .control-right {padding-left: 0;}
+        .control-main .control-right .raw.right .thumb {float: none;width: 100%;margin: 0 0;}
+    }
+    @include sm {
+        .control-main .control-right .raw.right .thumb {float: none;width: 100%;margin: 0 0;}
+    }
+}
